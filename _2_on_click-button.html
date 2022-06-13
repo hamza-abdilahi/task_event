@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+  document.addEventListener("DOMContentLoaded", ()=>{
+    
+    const button = document.querySelector("#btn");
+
+    function displayDate() {
+      document.getElementById("date").innerHTML = Date();    
+    }
+    button.addEventListener("click", displayDate);
+})
+  </script>
+</head>
+
+<body>
+
+  <h2>JavaScript HTML Events - click</h2>
+  <p id="date"></p>
+
+  <!-- TODO add onclick event to call displayDate() -->
+  <button type="button" id="btn">Click me to display Date.</button>
+
+</body>
+
+</html>
